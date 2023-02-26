@@ -1,0 +1,18 @@
+export const postCategories = [
+  "cars",
+  "electronics",
+  "baby & kids",
+  "music & education",
+  "house & diy",
+  "clothes & lifestyle",
+  "business",
+  "property",
+  "animals",
+  "cars & motor",
+  "holiday & tickets",
+  "services",
+  "sports & hobbies",
+  "farming",
+  "lost & found",
+  "everything",
+];

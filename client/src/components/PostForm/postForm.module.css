@@ -1,0 +1,91 @@
+.postForm form {
+  display: flex;
+  flex-direction: column;
+  max-width: 400px;
+}
+
+input:focus,
+textarea:focus,
+select:focus,
+button:focus {
+  outline: none;
+}
+
+.titleInput {
+  padding: 10px 20px;
+  border: 1px solid black;
+  border-radius: 0px;
+  margin-top: 4px;
+}
+
+.descInput {
+  font-family: inherit;
+  padding: 10px 20px;
+  border: 1px solid black;
+  border-radius: 0px;
+  margin-top: 4px;
+}
+
+.priceInput {
+  padding: 10px 20px;
+  border: 1px solid black;
+  border-radius: 0px;
+  margin-top: 4px;
+}
+
+.contactInput {
+  padding: 10px 20px;
+  border: 1px solid black;
+  border-radius: 0px;
+  margin-top: 4px;
+}
+
+.categoryInput {
+  border: 1px solid black;
+  outline: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  margin-top: 4px;
+}
+
+.fileInputLabel {
+  border: 1px solid black;
+  width: fit-content;
+  cursor: pointer;
+  padding: 10px 20px;
+  margin-top: 10px;
+}
+
+.fileInput {
+  display: none;
+}
+
+.previewList {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 10px;
+}
+
+.previewImageWrapper {
+  position: relative;
+}
+
+.previewImage {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  filter: brightness(80%);
+}
+
+.removeImage {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  color: white;
+  cursor: pointer;
+}
+
+.submitButton {
+  width: 200px;
+  padding: 10px 20px;
+}

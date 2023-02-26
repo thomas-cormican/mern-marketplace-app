@@ -1,0 +1,19 @@
+.login {
+  max-width: 400px;
+  margin: auto;
+}
+
+.loginSection {
+  border: 1px solid black;
+  margin-top: 20px;
+}
+
+section h2 {
+  background-color: #3f0071;
+  color: white;
+  padding: 4px 10px;
+}
+
+.formWrapper {
+  padding: 20px;
+}

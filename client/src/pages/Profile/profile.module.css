@@ -1,0 +1,24 @@
+.profile {
+  margin: 20px 80px;
+  border: 1px solid black;
+}
+
+.profile h2 {
+  background-color: #3f0071;
+  color: white;
+  padding: 4px 10px;
+}
+
+.noPostsMessage {
+  padding: 10px;
+}
+
+.postContainer:not(:last-child) {
+  border-bottom: 1px solid #b3b3b3;
+}
+
+@media screen and (max-width: 770px) {
+  .profile {
+    margin: 20px 0px;
+  }
+}

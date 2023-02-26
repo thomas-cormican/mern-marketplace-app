@@ -1,0 +1,71 @@
+.navbar {
+  display: flex;
+  flex-direction: column;
+  position: sticky;
+  top: 0px;
+  width: 200px;
+  overflow-y: scroll;
+  z-index: 100;
+  padding: 20px;
+  background-color: #000000;
+  color: white;
+}
+
+.navbar::-webkit-scrollbar {
+  width: 0px;
+  background: transparent; /* make scrollbar transparent */
+}
+
+.navbar a {
+  color: white;
+}
+
+.navbar a:visited {
+  color: white;
+}
+
+.logoImage {
+  width: 100%;
+}
+
+.subtext {
+  margin-top: 10px;
+  font-size: 12px;
+}
+
+.links {
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+  margin: 20px 0px;
+}
+
+.links a {
+  width: fit-content;
+}
+
+.links li {
+  width: fit-content;
+  cursor: pointer;
+}
+
+.subscribeForm input {
+  border: none;
+  padding: 10px 4px;
+  width: 100%;
+  margin: 10px 0px;
+}
+
+.subscribeForm input:focus {
+  outline: none;
+}
+
+.subscribeForm button {
+  border: none;
+  width: 100%;
+  font-size: 16px;
+  padding: 10px 0px;
+  background-color: #3f0071;
+  color: white;
+  cursor: pointer;
+}

@@ -1,0 +1,117 @@
+.postDetail {
+  padding: 40px 80px;
+}
+
+.imageSlider {
+  position: relative;
+  height: 300px;
+}
+
+.image {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  background-image: url(../../assets/placeholder-Sm.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position-x: center;
+  border: 1px solid #b3b3b3;
+}
+
+.arrow {
+  font-size: 30px;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+}
+
+.arrow svg {
+  pointer-events: none;
+}
+
+.leftArrow {
+  left: 5%;
+}
+
+.rightArrow {
+  right: 5%;
+}
+
+.postBody {
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
+}
+
+.postDateUsername {
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+  color: rgb(75, 75, 75);
+}
+
+.postDate {
+  margin-right: 16px;
+}
+
+.price {
+  font-size: 14px;
+  color: rgb(75, 75, 75);
+  margin-top: 20px;
+}
+
+.priceNumber {
+  font-size: 18px;
+  color: black;
+  font-weight: bold;
+}
+
+.share {
+  font-size: 22px;
+  cursor: pointer;
+  width: fit-content;
+  margin-left: auto;
+}
+
+.description {
+  border-top: 1px solid #b3b3b3;
+  padding-top: 10px;
+}
+
+.contact {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 10px;
+  font-size: 16px;
+}
+
+.email span:first-child {
+  font-weight: bold;
+  margin-right: 4px;
+}
+
+.email {
+  margin-right: 20px;
+}
+
+.phone span:first-child {
+  font-weight: bold;
+  margin-right: 4px;
+}
+
+@media screen and (max-width: 848px) {
+  .postDetail {
+    padding: 0px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .imageSlider {
+    height: 240px;
+  }
+
+  .image {
+    object-fit: cover;
+  }
+}

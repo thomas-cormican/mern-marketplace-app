@@ -1,0 +1,87 @@
+.post {
+  display: flex;
+  height: 200px;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.postWrapper {
+  position: relative;
+}
+
+.postImage {
+  flex-shrink: 0;
+  width: 200px;
+  object-fit: cover;
+  background-image: url(../../assets/placeholder-Sm.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position-x: center;
+}
+
+.postInfo {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 0px 20px;
+  width: 100%;
+  min-width: 0px;
+}
+
+.postInfoTop {
+  display: flex;
+  flex-direction: column;
+}
+
+.postTitle {
+  font-weight: bold;
+  font-size: 20px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.postDate {
+  color: grey;
+  font-size: 14px;
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.postDescription {
+  margin-top: 10px;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.postPrice {
+  font-weight: bold;
+  font-size: 20px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.postInfoBottom {
+  display: flex;
+  justify-content: space-between;
+}
+
+.deleteButton {
+  display: flex;
+  align-items: center;
+  font-size: 22px;
+  color: #dc143c;
+  cursor: pointer;
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+}
+
+@media screen and (max-width: 416px) {
+  .postImage {
+    width: 100px;
+  }
+}

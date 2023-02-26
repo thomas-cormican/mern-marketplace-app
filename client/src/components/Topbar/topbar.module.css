@@ -1,0 +1,142 @@
+.topbar {
+  display: flex;
+  justify-content: space-between;
+  position: sticky;
+  top: 0px;
+  z-index: 5;
+  background-color: black;
+  color: white;
+  padding: 20px;
+}
+
+.topbarLeft {
+  flex-basis: 45%;
+  min-width: 200px;
+}
+
+.searchBar {
+  width: 100%;
+  font-size: 22px;
+  position: relative;
+}
+
+.searchBarWrapper {
+  display: flex;
+  background-color: white;
+  color: black;
+  border: 1px solid black;
+  align-items: center;
+  padding: 0px 10px;
+  z-index: 10;
+  position: relative;
+}
+
+.searchBarWrapper svg {
+  position: relative;
+  bottom: 1px;
+}
+
+.searchBar input {
+  padding: 8px 0px;
+  width: 100%;
+  border: none;
+}
+
+.searchBar input:focus {
+  outline: none;
+}
+
+.searchResultsWrapper {
+  position: absolute;
+  top: 100%;
+  width: 100%;
+  background-color: white;
+  border: 1px solid black;
+  transform: translateX(-10px);
+}
+
+.searchResults {
+  background-color: white;
+  font-size: 16px;
+}
+
+.overlay {
+  z-index: 5;
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  top: 0px;
+  left: 0px;
+}
+
+.searchResult {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.searchResultTitle {
+  flex-basis: 60%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.searchResultPrice {
+  margin-left: auto;
+}
+
+.searchImage {
+  width: 50px;
+  height: 50px;
+  object-fit: cover;
+}
+
+.topbarRight {
+  display: flex;
+  justify-content: flex-end;
+  flex-basis: 45%;
+  align-items: center;
+}
+
+.topbarRight a {
+  color: white;
+}
+
+.topbarRight a:visited {
+  color: white;
+}
+
+.menuButton {
+  display: none;
+  align-items: center;
+  font-size: 22px;
+  cursor: pointer;
+}
+
+.menuButton svg {
+  pointer-events: none;
+}
+
+.auth {
+  margin-right: 10px;
+}
+
+.authLogin {
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+.authSignup {
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 1040px) {
+  .menuButton {
+    display: flex;
+  }
+
+  .auth {
+    display: none;
+  }
+}

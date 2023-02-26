@@ -1,0 +1,59 @@
+.home {
+  padding: 0px 80px;
+}
+
+section {
+  border: 1px solid black;
+}
+
+.categories {
+  margin-top: 20px;
+}
+
+section h2 {
+  background-color: #3f0071;
+  color: white;
+  padding: 4px 10px;
+}
+
+.categoriesWrapper {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  flex-wrap: wrap;
+}
+
+.categoryRow {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  flex-basis: 25%;
+  min-width: 150px;
+}
+
+.categoryRow a {
+  padding: 4px;
+  cursor: pointer;
+}
+
+.noPostsMessage {
+  padding: 10px;
+}
+
+.postsSection {
+  margin-top: 40px;
+}
+
+.postContainer:not(:last-child) {
+  border-bottom: 1px solid black;
+}
+
+@media screen and (max-width: 848px) {
+  .home {
+    padding: 0px;
+  }
+
+  .categoryRow {
+    flex-basis: 50%;
+  }
+}

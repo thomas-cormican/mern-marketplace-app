@@ -1,0 +1,109 @@
+.search {
+  margin: 20px 80px 0px 80px;
+  border: 1px solid black;
+}
+
+.search h2 {
+  background-color: #3f0071;
+  color: white;
+  padding: 4px 10px;
+}
+
+.search h3 {
+  font-size: 24px;
+}
+
+.searchBody {
+  display: flex;
+}
+
+.filters {
+  width: 200px;
+  flex-shrink: 0;
+  padding: 10px;
+  border-right: 1px solid black;
+}
+
+.filterForm {
+  display: flex;
+  flex-direction: column;
+}
+
+.filterForm select {
+  padding: 4px 8px;
+  border: 1px solid black;
+}
+
+.filterForm label {
+  font-weight: bold;
+  margin-top: 10px;
+  margin-bottom: 4px;
+}
+
+.priceInputs {
+  display: flex;
+  justify-content: space-between;
+}
+
+.priceInputs input {
+  width: 45%;
+  border: 1px solid black;
+  padding: 4px 8px;
+}
+
+.priceInputs input:focus {
+  outline: none;
+}
+
+.filterForm button {
+  width: 45%;
+  margin-top: 10px;
+  padding: 4px 10px;
+}
+
+.filterForm button:focus {
+  outline: none;
+}
+
+.itemList {
+  position: relative;
+  width: 100%;
+  min-height: 100px;
+}
+
+.noPostsMessage {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+@media screen and (max-width: 770px) {
+  .search {
+    margin: 20px 0px 0px 0px;
+  }
+
+  /* .searchBody {
+    flex-direction: column;
+  }
+
+  .filters {
+    width: 100%;
+    margin: auto;
+    border-right: none;
+    border-bottom: 1px solid #b3b3b3;
+  } */
+}
+
+@media screen and (max-width: 650px) {
+  .searchBody {
+    flex-direction: column;
+  }
+
+  .filters {
+    width: 100%;
+    margin: auto;
+    border-right: none;
+    border-bottom: 1px solid #b3b3b3;
+  }
+}
